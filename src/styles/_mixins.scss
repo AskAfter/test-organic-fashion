@@ -1,0 +1,22 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: 992px) and (max-width: 1279px) {
+      @content;
+    }
+  } @else if $breakpoint == mdLg {
+    @media (min-width: 1280px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: 1366px) and (max-width: 1919px) {
+      @content;
+    }
+  } @else if $breakpoint == gr {
+    @media (min-width: 1920px) {
+    }
+  }
+}

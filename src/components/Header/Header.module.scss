@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+.headerBlock {
+  background-color: $bg-offwhite;
+  .headerContainer {
+    position: relative;
+    padding: 29px 32px;
+
+    .navMobileMenu {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+}
