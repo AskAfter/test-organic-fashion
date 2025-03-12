@@ -17,6 +17,7 @@
     }
   } @else if $breakpoint == gr {
     @media (min-width: 1920px) {
+      @content;
     }
   }
 }
