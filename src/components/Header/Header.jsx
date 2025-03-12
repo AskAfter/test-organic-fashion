@@ -8,7 +8,7 @@ const Header = () => {
       <div className={`container ${s.headerContainer}`}>
         <nav className={s.nav}>
           <a href="/" rel="no-referrer noopener" className={s.navName}>
-            ALTANSCHOOL WEB COURSES
+            Altanschool web courses
           </a>
           <button type="button" className={s.navMobileMenu}>
             <BurgerIcon />

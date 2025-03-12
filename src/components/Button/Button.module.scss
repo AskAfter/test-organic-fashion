@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.btn {
+  color: $white;
+  text-transform: uppercase;
+  font-size: $font-size-13;
+  letter-spacing: 1.95px;
+}
+
+.primaryHero {
+  padding: auto auto;
+  width: 152px;
+  height: 32px;
+  border-radius: calc(32px / 2);
+  background-color: $buttonBorder-color;
+}

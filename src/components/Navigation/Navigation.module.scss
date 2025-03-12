@@ -3,6 +3,7 @@
 
 .navList {
   display: flex;
+  text-transform: uppercase;
   @include respond(xxl) {
     font-size: $font-size-32;
   }

@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+.heroBlock {
+  background-color: $bg-offwhite;
+}
+.heroContainer {
+  display: flex;
+  padding: 19px 9px 49px 15px;
+  position: relative;
+  background-color: $bg-offwhite;
+  height: 488px;
+}
+
+.contentWrap {
+  z-index: 2;
+}
+
+.heroImage {
+  display: block;
+  width: 175px;
+  height: 282px;
+  position: absolute;
+  right: 0;
+  top: 78px;
+}
+
+.heroHeader {
+  font-size: $font-size-32;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 17px;
+}
+
+.text {
+  //   display: inline-block;
+  width: 166px;
+  margin-bottom: 30px;
+}
+
+.textWrap {
+  margin-left: 17px;
+}

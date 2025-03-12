@@ -45,21 +45,18 @@
 }
 
 .navName {
+  text-transform: uppercase;
   @include respond(md) {
     margin-right: 176.88px;
-    margin-left: 61px;
   }
   @include respond(lg) {
     margin-right: 288px;
-    margin-left: 78px;
   }
   @include respond(xl) {
     margin-right: 288px;
-    margin-left: 144px;
   }
   @include respond(xxl) {
     margin-right: 162px;
-    margin-left: 204px;
     font-size: $font-size-36;
   }
 }
