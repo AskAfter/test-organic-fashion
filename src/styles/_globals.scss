@@ -72,14 +72,14 @@ fieldset {
     max-width: 992px;
   }
 
-  @include respond(mdLg) {
+  @include respond(lg) {
     max-width: 1280px;
   }
 
-  @include respond(lg) {
+  @include respond(xl) {
     max-width: 1366px;
   }
-  @include respond(gr) {
+  @include respond(xxl) {
     max-width: 1920px;
   }
 }

@@ -1,21 +1,21 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == sm {
-    @media (max-width: 991px) {
+    @media (max-width: 991.5px) {
       @content;
     }
   } @else if $breakpoint == md {
-    @media (min-width: 992px) and (max-width: 1279px) {
-      @content;
-    }
-  } @else if $breakpoint == mdLg {
-    @media (min-width: 1280px) and (max-width: 1365px) {
+    @media (min-width: 992px) and (max-width: 1279.5px) {
       @content;
     }
   } @else if $breakpoint == lg {
-    @media (min-width: 1366px) and (max-width: 1919px) {
+    @media (min-width: 1280px) and (max-width: 1365.5px) {
       @content;
     }
-  } @else if $breakpoint == gr {
+  } @else if $breakpoint == xl {
+    @media (min-width: 1366px) and (max-width: 1919.5px) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
     @media (min-width: 1920px) {
       @content;
     }

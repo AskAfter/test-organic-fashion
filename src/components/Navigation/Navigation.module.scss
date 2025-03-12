@@ -1,0 +1,76 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.navList {
+  display: flex;
+  @include respond(xxl) {
+    font-size: $font-size-32;
+  }
+  @include respond(md) {
+    li {
+      &:nth-child(1) {
+        margin-right: 47.81px;
+      }
+      &:nth-child(2) {
+        margin-right: 50.97px;
+      }
+      &:nth-child(3) {
+        margin-right: 61.85px;
+      }
+      &:nth-child(4) {
+        margin-right: 41.08px;
+      }
+    }
+  }
+
+  @include respond(lg) {
+    li {
+      &:nth-child(1) {
+        margin-right: 74px;
+      }
+      &:nth-child(2) {
+        margin-right: 80px;
+      }
+      &:nth-child(3) {
+        margin-right: 90px;
+      }
+      &:nth-child(4) {
+        margin-right: 64px;
+      }
+    }
+  }
+
+  @include respond(xl) {
+    li {
+      &:nth-child(1) {
+        margin-right: 74px;
+      }
+      &:nth-child(2) {
+        margin-right: 80px;
+      }
+      &:nth-child(3) {
+        margin-right: 90px;
+      }
+      &:nth-child(4) {
+        margin-right: 64px;
+      }
+    }
+  }
+
+  @include respond(xxl) {
+    li {
+      &:nth-child(1) {
+        margin-right: 90.16px;
+      }
+      &:nth-child(2) {
+        margin-right: 95.9px;
+      }
+      &:nth-child(3) {
+        margin-right: 117.82px;
+      }
+      &:nth-child(4) {
+        margin-right: 78.39px;
+      }
+    }
+  }
+}

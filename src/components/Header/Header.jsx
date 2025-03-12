@@ -1,5 +1,5 @@
 import BurgerIcon from '../BurgerIcon/BurgerIcon';
-// import Navigation from '../Navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 import s from './Header.module.scss';
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
           <button type="button" className={s.navMobileMenu}>
             <BurgerIcon />
           </button>
-          {/* <Navigation /> */}
+          <div className={s.navNavigation}>
+            <Navigation />
+          </div>
         </nav>
       </div>
     </div>
