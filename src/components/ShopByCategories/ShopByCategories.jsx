@@ -41,7 +41,12 @@ const ShopByCategories = () => {
                 srcSet={`${img1x2Jpg} 2x, ${img1x1Jpg} 1x`}
                 type="image/jpeg"
               />
-              <img className={s.shopImage} src={img1x1Jpg} alt="bush" />
+              <img
+                className={s.shopImage}
+                src={img1x1Jpg}
+                alt="bush"
+                loading="lazy"
+              />
             </picture>
           </li>
           <li className={s.shopListItem}>
@@ -54,7 +59,12 @@ const ShopByCategories = () => {
                 srcSet={`${img2x2Jpg} 2x, ${img2x1Jpg} 1x`}
                 type="image/jpeg"
               />
-              <img className={s.shopImage} src={img2x1Jpg} alt="flowerpot" />
+              <img
+                className={s.shopImage}
+                src={img2x1Jpg}
+                alt="flowerpot"
+                loading="lazy"
+              />
             </picture>
           </li>
           <li className={s.shopListItem}>
@@ -67,7 +77,12 @@ const ShopByCategories = () => {
                 srcSet={`${img3x2Jpg} 2x, ${img3x1Jpg} 1x`}
                 type="image/jpeg"
               />
-              <img className={s.shopImage} src={img3x1Jpg} alt="leaf" />
+              <img
+                className={s.shopImage}
+                src={img3x1Jpg}
+                alt="leaf"
+                loading="lazy"
+              />
             </picture>
           </li>
           <li className={s.shopListItem}>
@@ -80,7 +95,12 @@ const ShopByCategories = () => {
                 srcSet={`${img4x2Jpg} 2x, ${img4x1Jpg} 1x`}
                 type="image/jpeg"
               />
-              <img className={s.shopImage} src={img4x1Jpg} alt="fern" />
+              <img
+                className={s.shopImage}
+                src={img4x1Jpg}
+                alt="fern"
+                loading="lazy"
+              />
             </picture>
           </li>
         </ul>

@@ -57,7 +57,12 @@ const Collection = () => {
                 srcSet={`${img1x2Png} 2x, ${img1x1Png} 1x`}
                 type="image/png"
               />
-              <img className={s.collectionImage} src={img1x1Png} alt="bush" />
+              <img
+                className={s.collectionImage}
+                src={img1x1Png}
+                alt="bush"
+                loading="lazy"
+              />
             </picture>
           </li>
           <li className={s.collectionListItem}>
@@ -84,6 +89,7 @@ const Collection = () => {
                 className={s.collectionImage}
                 src={img2x1Png}
                 alt="flowerpot"
+                loading="lazy"
               />
             </picture>
           </li>
@@ -107,7 +113,12 @@ const Collection = () => {
                 srcSet={`${img3x2Png} 2x, ${img3x1Png} 1x`}
                 type="image/png"
               />
-              <img className={s.collectionImage} src={img3x1Png} alt="leaf" />
+              <img
+                className={s.collectionImage}
+                src={img3x1Png}
+                alt="leaf"
+                loading="lazy"
+              />
             </picture>
           </li>
         </ul>

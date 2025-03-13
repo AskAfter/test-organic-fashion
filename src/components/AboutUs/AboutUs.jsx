@@ -24,7 +24,12 @@ const AboutUs = () => {
             srcSet={`${img1x2Jpg} 2x, ${img1x1Jpg} 1x`}
             type="image/jpg"
           />
-          <img className={s.AboutUsImage} src={img1x1Jpg} alt="horsetail" />
+          <img
+            className={s.AboutUsImage}
+            src={img1x1Jpg}
+            alt="horsetail"
+            loading="lazy"
+          />
         </picture>
         <div className={s.aboutUsContentWrap}>
           <h2 className={s.aboutUsHeader}>About us</h2>
@@ -54,6 +59,7 @@ const AboutUs = () => {
               className={s.AboutUsMobileImage}
               src={img1x1Jpg}
               alt="horsetail"
+              loading="lazy"
             />
           </picture>
           <p className={`${s.aboutUsText} ${s.aboutUsSecondText}`}>

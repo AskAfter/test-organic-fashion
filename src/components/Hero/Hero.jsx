@@ -32,7 +32,7 @@ const Hero = () => {
             srcSet={`${img1x2Jpg} 2x, ${img1x1Jpg} 1x`}
             type="image/jpeg"
           />
-          <img src={img1x1Jpg} alt="flowerpot" />
+          <img src={img1x1Jpg} alt="flowerpot" loading="lazy" />
         </picture>
         <div className={s.contentWrap}>
           <h1 className={s.heroHeader}>Organic fashion</h1>

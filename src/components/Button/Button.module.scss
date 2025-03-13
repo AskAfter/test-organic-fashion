@@ -75,3 +75,43 @@
     height: 88px;
   }
 }
+
+.primary {
+  padding: auto auto;
+  font-size: $font-size-15;
+  letter-spacing: 2.25px;
+  color: $white;
+  width: 100%;
+  height: 47px;
+  border-radius: 10px;
+  background-color: $buttonBorder-color;
+  margin-top: 32px;
+  @media (min-width: 992px) {
+    font-size: $font-size-20;
+    line-height: 26px;
+    letter-spacing: 3px;
+  }
+  @include respond(md) {
+    width: 100%;
+    height: 46px;
+    margin-top: 22px;
+  }
+  @include respond(lg) {
+    width: 205px;
+    height: 59px;
+    margin-top: 32px;
+  }
+  @include respond(xl) {
+    width: 205px;
+    height: 59px;
+    margin-top: 32px;
+  }
+  @include respond(xxl) {
+    font-size: $font-size-36;
+    line-height: 47px;
+    letter-spacing: 5.4px;
+    width: 371px;
+    height: 88px;
+    margin-top: 74px;
+  }
+}
