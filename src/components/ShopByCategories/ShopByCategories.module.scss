@@ -7,6 +7,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  @include respond(md) {
+    padding-top: 52px;
+  }
+  @include respond(lg) {
+    padding-top: 77px;
+  }
+  @include respond(xl) {
+    padding-top: 60px;
+  }
+  @include respond(xxl) {
+    padding-top: 80px;
+  }
 }
 
 .shopHeader {
@@ -16,6 +30,30 @@
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @media ((min-width: 992px) and (max-width:1919.5px)) {
+    font-size: $font-size-32;
+  }
+
+  @include respond(md) {
+    line-height: 42px;
+    width: 312px;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  @include respond(lg) {
+    line-height: 42px;
+    margin-bottom: 80px;
+  }
+  @include respond(xl) {
+    line-height: 46px;
+    margin-bottom: 89px;
+  }
+  @include respond(xxl) {
+    font-size: $font-size-48;
+    line-height: 63px;
+    margin-bottom: 42px;
+  }
 }
 
 .shopList {
@@ -26,6 +64,22 @@
   overflow: hidden;
   flex-wrap: nowrap;
   margin-bottom: 10px;
+  @include respond(md) {
+    gap: 12px;
+    margin-bottom: 9.5px;
+  }
+  @include respond(lg) {
+    gap: 15px;
+    margin-bottom: 12px;
+  }
+  @include respond(xl) {
+    gap: 15px;
+    margin-bottom: 13.5px;
+  }
+  @include respond(xxl) {
+    gap: 23px;
+    margin-bottom: 18px;
+  }
 }
 
 .shopListItem {
@@ -34,6 +88,23 @@
   box-sizing: border-box;
   overflow: hidden;
   flex-shrink: 0;
+
+  @include respond(md) {
+    width: 269px;
+    height: 275px;
+  }
+  @include respond(lg) {
+    width: 345px;
+    height: 352px;
+  }
+  @include respond(xl) {
+    width: 368px;
+    height: 390px;
+  }
+  @include respond(xxl) {
+    width: 518px;
+    height: 528px;
+  }
 }
 
 .shopImage {
@@ -45,4 +116,17 @@
 .shopBottomImage {
   width: 100%;
   height: 85px;
+
+  @include respond(md) {
+    height: 185px;
+  }
+  @include respond(lg) {
+    height: 237px;
+  }
+  @include respond(xl) {
+    height: 263px;
+  }
+  @include respond(xxl) {
+    height: 356px;
+  }
 }
