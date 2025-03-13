@@ -2,7 +2,7 @@ import BurgerIcon from '../BurgerIcon/BurgerIcon';
 import Navigation from '../Navigation/Navigation';
 import s from './Header.module.scss';
 
-const Header = () => {
+const Header = ({ openModal }) => {
   return (
     <div className={`block ${s.headerBlock}`}>
       <div className={`container ${s.headerContainer}`}>
@@ -10,7 +10,7 @@ const Header = () => {
           <a href="/" rel="no-referrer noopener" className={s.navName}>
             Altanschool web courses
           </a>
-          <button type="button" className={s.navMobileMenu}>
+          <button type="button" className={s.navMobileMenu} onClick={openModal}>
             <BurgerIcon />
           </button>
           <div className={s.navNavigation}>
