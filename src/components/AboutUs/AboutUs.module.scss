@@ -11,6 +11,28 @@
   justify-content: center;
   align-items: center;
   padding: 23px 54px 90px 37px;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @include respond(md) {
+    gap: 41px;
+    padding: 68px 81px 46px 60px;
+  }
+  @include respond(lg) {
+    gap: 94px;
+    padding: 107px 104px 70px 42px;
+  }
+  @include respond(xl) {
+    gap: 94px;
+    padding: 107px 140px 130px 90px;
+  }
+  @include respond(xxl) {
+    gap: 139px;
+    padding: 160px 156px 102px 62px;
+  }
 }
 
 .aboutUsContentWrap {
@@ -18,11 +40,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: 992px) {
+    // justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 .AboutUsImage {
   @include respond(sm) {
     display: none;
+  }
+  @include respond(md) {
+    min-width: 252px;
+    height: 508px;
+  }
+  @include respond(lg) {
+    min-width: 316px;
+    height: 626px;
+  }
+  @include respond(xl) {
+    min-width: 316px;
+    height: 626px;
+  }
+  @include respond(xxl) {
+    min-width: 474px;
+    height: 938px;
   }
 }
 
@@ -42,7 +84,7 @@
   @include respond(md) {
     line-height: 42px;
     width: 312px;
-    text-align: center;
+    // text-align: center;
     margin-bottom: 29px;
   }
   @include respond(lg) {
@@ -64,14 +106,40 @@
 .aboutUsText {
   text-align: center;
   line-height: 21px;
+  @media ((min-width: 992px) and (max-width: 1919.5px)) {
+    font-size: $font-size-20;
+    line-height: 26px;
+  }
+  @include respond(xxl) {
+    font-size: $font-size-36;
+    line-height: 47px;
+  }
+  @media (min-width: 992px) {
+    text-align: start;
+  }
 }
 
 .aboutUsFirstText {
   margin-bottom: 44px;
+  @media (min-width: 992px) {
+    margin-bottom: 24px;
+  }
 }
 
 .aboutUsSecondText {
   margin-bottom: 24px;
+  @include respond(md) {
+    margin-bottom: 34px;
+  }
+  @include respond(lg) {
+    margin-bottom: 72px;
+  }
+  @include respond(xl) {
+    margin-bottom: 70px;
+  }
+  @include respond(xxl) {
+    margin-bottom: 80px;
+  }
 }
 
 .AboutUsMobileImage {
