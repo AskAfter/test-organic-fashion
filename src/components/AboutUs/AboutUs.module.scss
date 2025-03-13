@@ -1,0 +1,84 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.aboutUsBlock {
+  background-color: $bg-offwhite;
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 54px 90px 37px;
+}
+
+.aboutUsContentWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutUsImage {
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.aboutUsHeader {
+  font-size: $font-size-20;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+
+  @media ((min-width: 992px) and (max-width:1919.5px)) {
+    font-size: $font-size-32;
+    letter-spacing: 4.8px;
+  }
+
+  @include respond(md) {
+    line-height: 42px;
+    width: 312px;
+    text-align: center;
+    margin-bottom: 29px;
+  }
+  @include respond(lg) {
+    line-height: 42px;
+    margin-bottom: 37px;
+  }
+  @include respond(xl) {
+    line-height: 46px;
+    margin-bottom: 37px;
+  }
+  @include respond(xxl) {
+    font-size: $font-size-48;
+    line-height: 63px;
+    margin-bottom: 55px;
+    letter-spacing: 7.2px;
+  }
+}
+
+.aboutUsText {
+  text-align: center;
+  line-height: 21px;
+}
+
+.aboutUsFirstText {
+  margin-bottom: 44px;
+}
+
+.aboutUsSecondText {
+  margin-bottom: 24px;
+}
+
+.AboutUsMobileImage {
+  width: 198px;
+  height: 250px;
+  margin-bottom: 33px;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}

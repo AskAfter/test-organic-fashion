@@ -1,3 +1,4 @@
+import AboutUs from './components/AboutUs/AboutUs';
 import Collection from './components/Collection/Collection';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <ShopByCategories />
       <Collection />
+      <AboutUs />
     </>
   );
 }
