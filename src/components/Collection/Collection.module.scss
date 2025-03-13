@@ -14,6 +14,18 @@
   height: 203px;
   background-color: $bg-gray;
   z-index: -1;
+  @include respond(md) {
+    height: 316px;
+  }
+  @include respond(lg) {
+    height: 405px;
+  }
+  @include respond(xl) {
+    height: 442px;
+  }
+  @include respond(xxl) {
+    height: 606px;
+  }
 }
 
 .collectionContainer {
@@ -27,16 +39,20 @@
   //   min-height: 401px;
 
   @include respond(md) {
-    padding-top: 52px;
+    padding-top: 37px;
+    padding-bottom: 61px;
   }
   @include respond(lg) {
-    padding-top: 77px;
+    padding-top: 80px;
+    padding-bottom: 91px;
   }
   @include respond(xl) {
-    padding-top: 60px;
+    padding-top: 82px;
+    padding-bottom: 151px;
   }
   @include respond(xxl) {
-    padding-top: 80px;
+    padding-top: 123px;
+    padding-bottom: 133px;
   }
 }
 
@@ -50,26 +66,28 @@
 
   @media ((min-width: 992px) and (max-width:1919.5px)) {
     font-size: $font-size-32;
+    letter-spacing: 4.8px;
   }
 
   @include respond(md) {
     line-height: 42px;
     width: 312px;
     text-align: center;
-    margin-bottom: 37px;
+    margin-bottom: 53px;
   }
   @include respond(lg) {
     line-height: 42px;
-    margin-bottom: 80px;
+    margin-bottom: 104px;
   }
   @include respond(xl) {
     line-height: 46px;
-    margin-bottom: 89px;
+    margin-bottom: 104px;
   }
   @include respond(xxl) {
     font-size: $font-size-48;
     line-height: 63px;
-    margin-bottom: 42px;
+    margin-bottom: 150px;
+    letter-spacing: 7.2px;
   }
 }
 
@@ -80,34 +98,37 @@
   justify-content: center;
   overflow: hidden;
   flex-wrap: nowrap;
-  margin-bottom: 25px;
-  .collectionListItem {
-    &:nth-child(1) {
-      margin-top: 5px;
-      width: 151px;
-      height: 153px;
-    }
-    &:nth-child(3) {
-      margin-top: 5px;
-      width: 151px;
-      height: 153px;
+  margin-bottom: 17px;
+  @media (max-width: 991.5px) {
+    .collectionListItem {
+      &:nth-child(1) {
+        margin-top: 5px;
+        width: 151px;
+        height: 153px;
+      }
+      &:nth-child(3) {
+        margin-top: 5px;
+        width: 151px;
+        height: 153px;
+      }
     }
   }
+
   @include respond(md) {
-    gap: 12px;
-    margin-bottom: 9.5px;
+    gap: 61px;
+    margin-bottom: 38px;
   }
   @include respond(lg) {
-    gap: 15px;
-    margin-bottom: 12px;
+    gap: 79px;
+    margin-bottom: 61px;
   }
   @include respond(xl) {
-    gap: 15px;
-    margin-bottom: 13.5px;
+    gap: 79px;
+    margin-bottom: 62px;
   }
   @include respond(xxl) {
-    gap: 23px;
-    margin-bottom: 18px;
+    gap: 118px;
+    margin-bottom: 95px;
   }
 }
 
@@ -119,20 +140,20 @@
   flex-shrink: 0;
 
   @include respond(md) {
-    width: 269px;
-    height: 275px;
+    width: 262px;
+    height: 264px;
   }
   @include respond(lg) {
-    width: 345px;
-    height: 352px;
+    width: 335px;
+    height: 338px;
   }
   @include respond(xl) {
-    width: 368px;
-    height: 390px;
+    width: 338px;
+    height: 345px;
   }
   @include respond(xxl) {
-    width: 518px;
-    height: 528px;
+    width: 502px;
+    height: 506px;
   }
 }
 
@@ -166,4 +187,26 @@
   max-width: 298px;
   text-align: center;
   letter-spacing: 2.25px;
+
+  @media ((min-width: 992px) and (max-width:1919.5px)) {
+    font-size: $font-size-32;
+    letter-spacing: 4.8px;
+    line-height: 42px;
+  }
+
+  @include respond(md) {
+    max-width: 750px;
+  }
+  @include respond(lg) {
+    max-width: 958px;
+  }
+  @include respond(xl) {
+    max-width: 970px;
+  }
+  @include respond(xxl) {
+    max-width: 1350px;
+    font-size: $font-size-40;
+    letter-spacing: 6px;
+    line-height: 52px;
+  }
 }
