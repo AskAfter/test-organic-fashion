@@ -35,7 +35,9 @@ const Hero = () => {
           <img src={img1x1Jpg} alt="flowerpot" loading="lazy" />
         </picture>
         <div className={s.contentWrap}>
-          <h1 className={s.heroHeader}>Organic fashion</h1>
+          <h1 className={s.heroHeader} id="home">
+            Organic fashion
+          </h1>
           <div className={s.textWrap}>
             <p className={s.text}>
               Lorem Ipsum is simply dummy text of the printing and typesetting

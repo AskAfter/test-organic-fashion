@@ -29,7 +29,9 @@ const ShopByCategories = () => {
   return (
     <div className={`block ${s.shopBlock}`}>
       <div className={`container ${s.shopContainer}`}>
-        <h2 className={s.shopHeader}>Shop by categories</h2>
+        <h2 className={s.shopHeader} id="shop">
+          Shop by categories
+        </h2>
         <ul className={s.shopList}>
           <li className={s.shopListItem}>
             <picture>

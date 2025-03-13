@@ -5,27 +5,27 @@ const Navigation = () => {
       <nav className={s.nav}>
         <ul className={s.navList}>
           <li className={s.navListItem}>
-            <a href="" className={s.navListItemLink}>
+            <a href="#home" className={s.navListItemLink}>
               Home
             </a>
           </li>
           <li className={s.navListItem}>
-            <a href="" className={s.navListItemLink}>
+            <a href="#about" className={s.navListItemLink}>
               About
             </a>
           </li>
           <li className={s.navListItem}>
-            <a href="" className={s.navListItemLink}>
+            <a href="#shop" className={s.navListItemLink}>
               Shop
             </a>
           </li>
           <li className={s.navListItem}>
-            <a href="" className={s.navListItemLink}>
+            <a href="#" className={s.navListItemLink}>
               Blog
             </a>
           </li>
           <li className={s.navListItem}>
-            <a href="" className={s.navListItemLink}>
+            <a href="#" className={s.navListItemLink}>
               Contact
             </a>
           </li>
