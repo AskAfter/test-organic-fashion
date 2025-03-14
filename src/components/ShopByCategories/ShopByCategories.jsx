@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const ShopByCategories = () => {
   const state = useSelector(state => state.shop);
-  console.log(state);
+  // console.log(state);
   return (
     <div className={`block ${s.shopBlock}`}>
       <div className={`container ${s.shopContainer}`}>
@@ -85,21 +85,23 @@ const ShopByCategories = () => {
             </picture>
           </li>
         </ul>
-        <picture>
-          <source
-            srcSet={`${state.images.img5.webp.x2} 2x, ${state.images.img5.webp.x1} 1x`}
-            type="image/webp"
-          />
-          <source
-            srcSet={`${state.images.img5.jpg.x2} 2x, ${state.images.img5.jpg.x1} 1x`}
-            type="image/jpeg"
-          />
-          <img
-            className={s.shopBottomImage}
-            src={state.images.img5.jpg.x1}
-            alt="horsetail"
-          />
-        </picture>
+        <div className={s.imageContainer}>
+          <picture>
+            <source
+              srcSet={`${state.images.img5.webp.x2} 2x, ${state.images.img5.webp.x1} 1x`}
+              type="image/webp"
+            />
+            <source
+              srcSet={`${state.images.img5.jpg.x2} 2x, ${state.images.img5.jpg.x1} 1x`}
+              type="image/jpeg"
+            />
+            <img
+              className={s.shopBottomImage}
+              src={state.images.img5.jpg.x1}
+              alt="horsetail"
+            />
+          </picture>
+        </div>
       </div>
     </div>
   );

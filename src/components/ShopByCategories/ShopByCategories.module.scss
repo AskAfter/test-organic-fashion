@@ -115,9 +115,10 @@
   //   object-fit: cover;
 }
 
-.shopBottomImage {
+.imageContainer {
   width: 100%;
   height: 85px;
+  overflow: hidden;
 
   @include respond(md) {
     height: 185px;
@@ -131,4 +132,9 @@
   @include respond(xxl) {
     height: 356px;
   }
+}
+
+.shopBottomImage {
+  width: 100%;
+  height: 100%;
 }
