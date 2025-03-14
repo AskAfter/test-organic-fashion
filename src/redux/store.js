@@ -6,6 +6,7 @@ import aboutUsReducer from './aboutUsSlice';
 import collectionReducer from './collectionSlice';
 import shopReducer from './shopSlice';
 import followUsReducer from './followUsSlice';
+import modalReducer from './modalSlice';
 
 export const store = configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export const store = configureStore({
     collection: collectionReducer,
     shop: shopReducer,
     followUs: followUsReducer,
+    modal: modalReducer,
   },
 });

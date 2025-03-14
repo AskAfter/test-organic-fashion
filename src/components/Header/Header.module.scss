@@ -5,6 +5,7 @@
   .headerContainer {
     position: relative;
     padding: 29px 32px;
+
     @include respond(md) {
       padding-top: 46px;
       padding-bottom: 46px;
@@ -46,6 +47,7 @@
 
 .navName {
   text-transform: uppercase;
+
   @include respond(md) {
     margin-right: 176.88px;
   }

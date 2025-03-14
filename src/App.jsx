@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import AboutUs from './components/AboutUs/AboutUs';
 import Collection from './components/Collection/Collection';
@@ -9,30 +9,23 @@ import ShopByCategories from './components/ShopByCategories/ShopByCategories';
 import Modal from './components/Modal/Modal';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const isModalOpen = useSelector(state => state.modal.isOpen);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.pointerEvents = 'none';
-    } else {
-      document.body.style.overflow = '';
-      document.body.style.pointerEvents = '';
-    }
-  }, [isModalOpen]);
+  if (isModalOpen) {
+    document.body.classList.add('modal-open');
+  } else {
+    document.body.classList.remove('modal-open');
+  }
 
   return (
     <>
-      <Header openModal={openModal} />
+      <Header />
       <Hero />
       <ShopByCategories />
       <Collection />
       <AboutUs />
       <FollowUs />
-      {isModalOpen && <Modal closeModal={closeModal} />}
+      {isModalOpen && <Modal />}
     </>
   );
 }

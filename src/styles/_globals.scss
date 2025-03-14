@@ -92,3 +92,9 @@ fieldset {
 .block {
   width: 100vw;
 }
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

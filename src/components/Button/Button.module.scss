@@ -14,11 +14,13 @@
   height: 32px;
   border-radius: calc(32px / 2);
   background-color: $buttonBorder-color;
+
   @media (min-width: 992px) {
     font-size: $font-size-20;
     line-height: 26px;
     letter-spacing: 3px;
   }
+
   @include respond(md) {
     width: 227px;
     height: 43px;
@@ -50,11 +52,13 @@
   border: solid 5px $buttonBorder-color;
   border-radius: 10px;
   background-color: $bg-offwhite;
+
   @media (min-width: 992px) {
     font-size: $font-size-20;
     line-height: 26px;
     letter-spacing: 3px;
   }
+
   @include respond(md) {
     width: 194px;
     height: 46px;
@@ -86,11 +90,13 @@
   border-radius: 10px;
   background-color: $buttonBorder-color;
   margin-top: 32px;
+
   @media (min-width: 992px) {
     font-size: $font-size-20;
     line-height: 26px;
     letter-spacing: 3px;
   }
+
   @include respond(md) {
     width: 100%;
     height: 46px;

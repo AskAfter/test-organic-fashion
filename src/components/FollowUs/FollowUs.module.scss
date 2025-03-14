@@ -41,6 +41,7 @@
   align-items: center;
   padding: 34px 59px 77px;
   gap: 64px;
+
   @media (min-width: 992px) {
     flex-direction: row;
     align-items: flex-start;
@@ -69,6 +70,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   @media (min-width: 992px) {
     align-items: flex-start;
   }
@@ -111,6 +113,7 @@
 .followUsImage {
   min-width: 243px;
   height: 345px;
+
   @include respond(md) {
     min-width: 302px;
     height: 429px;

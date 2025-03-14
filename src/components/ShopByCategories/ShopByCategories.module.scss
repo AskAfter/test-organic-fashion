@@ -66,6 +66,7 @@
   overflow: hidden;
   flex-wrap: nowrap;
   margin-bottom: 10px;
+
   @include respond(md) {
     gap: 12px;
     margin-bottom: 9.5px;

@@ -4,6 +4,7 @@
 .navList {
   display: flex;
   text-transform: uppercase;
+
   @include respond(xxl) {
     font-size: $font-size-32;
   }
@@ -23,7 +24,6 @@
       }
     }
   }
-
   @include respond(lg) {
     li {
       &:nth-child(1) {
@@ -40,7 +40,6 @@
       }
     }
   }
-
   @include respond(xl) {
     li {
       &:nth-child(1) {
@@ -57,7 +56,6 @@
       }
     }
   }
-
   @include respond(xxl) {
     li {
       &:nth-child(1) {

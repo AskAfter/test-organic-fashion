@@ -1,9 +1,16 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { openModal } from '../../redux/modalSlice';
 import BurgerIcon from '../BurgerIcon/BurgerIcon';
 import Navigation from '../Navigation/Navigation';
 import s from './Header.module.scss';
 
-const Header = ({ openModal }) => {
+const Header = () => {
+  const dispatch = useDispatch();
+
+  const openModalHandler = () => {
+    dispatch(openModal());
+  };
+
   const state = useSelector(state => state.header);
   return (
     <div className={`block ${s.headerBlock}`}>
@@ -12,7 +19,11 @@ const Header = ({ openModal }) => {
           <a href="/" rel="no-referrer noopener" className={s.navName}>
             {state.title}
           </a>
-          <button type="button" className={s.navMobileMenu} onClick={openModal}>
+          <button
+            type="button"
+            className={s.navMobileMenu}
+            onClick={openModalHandler}
+          >
             <BurgerIcon />
           </button>
           <div className={s.navNavigation}>
