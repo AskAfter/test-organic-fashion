@@ -13,7 +13,9 @@ const FollowUs = () => {
       <div className={s.rectangular}></div>
       <div className={`container ${s.followUsContainer}`}>
         <div className={s.followUsContent}>
-          <h2 className={s.followUsHeader}>Follow us</h2>
+          <h2 className={s.followUsHeader} id="follow">
+            Follow us
+          </h2>
           <Form />
         </div>
         <picture>

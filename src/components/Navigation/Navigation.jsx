@@ -1,32 +1,39 @@
+import { useSelector } from 'react-redux';
 import s from './Navigation.module.scss';
 const Navigation = ({ modalClass, closeModal }) => {
+  const state = useSelector(state => state.navigation.nav);
+  // console.log(state);
   return (
     <div>
       <nav className={s.nav}>
         <ul className={`${s[modalClass]} ${s.navList}`}>
           <li className={s.navListItem}>
             <a href="#home" className={s.navListItemLink} onClick={closeModal}>
-              Home
+              {state.home}
             </a>
           </li>
           <li className={s.navListItem}>
             <a href="#about" className={s.navListItemLink} onClick={closeModal}>
-              About
+              {state.about}
             </a>
           </li>
           <li className={s.navListItem}>
             <a href="#shop" className={s.navListItemLink} onClick={closeModal}>
-              Shop
+              {state.shop}
             </a>
           </li>
           <li className={s.navListItem}>
             <a href="#" className={s.navListItemLink} onClick={closeModal}>
-              Blog
+              {state.blog}
             </a>
           </li>
           <li className={s.navListItem}>
-            <a href="#" className={s.navListItemLink} onClick={closeModal}>
-              Contact
+            <a
+              href="#follow"
+              className={s.navListItemLink}
+              onClick={closeModal}
+            >
+              {state.contact}
             </a>
           </li>
         </ul>
