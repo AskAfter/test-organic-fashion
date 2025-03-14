@@ -4,8 +4,8 @@ import headerReducer from './headerSlice';
 import navigationReducer from './navigationSlice';
 import aboutUsReducer from './aboutUsSlice';
 import collectionReducer from './collectionSlice';
+import shopReducer from './shopSlice';
 // import followUsReducer from './followUsSlice';
-// import collectionReducer from './collectionSlice';
 
 export const store = configureStore({
   reducer: {
@@ -14,7 +14,7 @@ export const store = configureStore({
     navigation: navigationReducer,
     aboutUs: aboutUsReducer,
     collection: collectionReducer,
+    shop: shopReducer,
     // followUs: followUsReducer,
-    // collection: collectionReducer,
   },
 });
