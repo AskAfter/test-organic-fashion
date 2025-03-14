@@ -1,6 +1,6 @@
 import s from './Form.module.scss';
 
-import Button from '../Button/Button';
+import Button from '../Button';
 
 const Form = () => {
   return (

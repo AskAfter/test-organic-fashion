@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal } from '../../redux/modalSlice';
-import BurgerIcon from '../BurgerIcon/BurgerIcon';
-import Navigation from '../Navigation/Navigation';
+import BurgerIcon from '../BurgerIcon';
+import Navigation from '../Navigation';
 import s from './Header.module.scss';
 
 const Header = () => {

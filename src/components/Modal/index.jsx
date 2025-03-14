@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { closeModal } from '../../redux/modalSlice';
 
 import s from './Modal.module.scss';
-import Navigation from '../Navigation/Navigation';
+import Navigation from '../Navigation';
 
 const Modal = () => {
   const dispatch = useDispatch();

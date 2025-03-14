@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import s from './Hero.module.scss';
 
-import Button from '../Button/Button';
+import Button from '../Button';
 
 const Hero = () => {
   const hero = useSelector(state => state.hero);

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import s from './AboutUs.module.scss';
-import Button from '../Button/Button';
+import Button from '../Button';
 
 const AboutUs = () => {
   const state = useSelector(state => state.aboutUs);

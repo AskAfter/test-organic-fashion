@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import s from './FollowUs.module.scss';
 
-import Form from '../Form/Form';
+import Form from '../Form';
 
 const FollowUs = () => {
   const state = useSelector(state => state.followUs);
