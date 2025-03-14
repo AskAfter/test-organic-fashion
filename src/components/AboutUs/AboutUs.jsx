@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const AboutUs = () => {
   const state = useSelector(state => state.aboutUs);
-  console.log(state);
+  // console.log(state);
   return (
     <div className={`block ${s.aboutUsBlock}`}>
       <div className={`container ${s.aboutUsContainer}`}>
