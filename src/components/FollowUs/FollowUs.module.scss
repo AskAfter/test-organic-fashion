@@ -90,7 +90,6 @@
   @include respond(md) {
     line-height: 42px;
     width: 312px;
-    // text-align: center;
     margin-bottom: 25px;
   }
   @include respond(lg) {

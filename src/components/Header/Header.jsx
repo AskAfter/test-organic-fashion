@@ -5,7 +5,6 @@ import s from './Header.module.scss';
 
 const Header = ({ openModal }) => {
   const state = useSelector(state => state.header);
-  // console.log(state);
   return (
     <div className={`block ${s.headerBlock}`}>
       <div className={`container ${s.headerContainer}`}>

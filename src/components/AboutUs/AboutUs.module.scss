@@ -41,7 +41,6 @@
   justify-content: center;
   align-items: center;
   @media (min-width: 992px) {
-    // justify-content: space-around;
     align-items: flex-start;
   }
 }
@@ -84,7 +83,6 @@
   @include respond(md) {
     line-height: 42px;
     width: 312px;
-    // text-align: center;
     margin-bottom: 29px;
   }
   @include respond(lg) {

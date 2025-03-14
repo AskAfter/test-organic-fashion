@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import AboutUs from './components/AboutUs/AboutUs';
 import Collection from './components/Collection/Collection';
 import FollowUs from './components/FollowUs/FollowUs';

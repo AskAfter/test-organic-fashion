@@ -1,8 +1,9 @@
 import { useSelector } from 'react-redux';
+
 import s from './Navigation.module.scss';
+
 const Navigation = ({ modalClass, closeModal }) => {
   const state = useSelector(state => state.navigation.nav);
-  // console.log(state);
   return (
     <div>
       <nav className={s.nav}>

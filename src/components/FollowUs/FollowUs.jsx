@@ -1,11 +1,11 @@
+import { useSelector } from 'react-redux';
+
 import s from './FollowUs.module.scss';
 
 import Form from '../Form/Form';
-import { useSelector } from 'react-redux';
 
 const FollowUs = () => {
   const state = useSelector(state => state.followUs);
-  console.log(state);
   return (
     <div className={`block ${s.followUsBlock}`}>
       <div className={s.rectangular}></div>

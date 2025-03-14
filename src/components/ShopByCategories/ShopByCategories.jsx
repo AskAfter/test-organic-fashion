@@ -1,10 +1,9 @@
-import s from './ShopByCategories.module.scss';
-
 import { useSelector } from 'react-redux';
+
+import s from './ShopByCategories.module.scss';
 
 const ShopByCategories = () => {
   const state = useSelector(state => state.shop);
-  // console.log(state);
   return (
     <div className={`block ${s.shopBlock}`}>
       <div className={`container ${s.shopContainer}`}>

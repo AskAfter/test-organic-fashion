@@ -1,5 +1,5 @@
-import Navigation from '../Navigation/Navigation';
 import s from './Modal.module.scss';
+import Navigation from '../Navigation/Navigation';
 
 const Modal = ({ closeModal }) => {
   return (

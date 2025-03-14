@@ -1,11 +1,9 @@
-import s from './AboutUs.module.scss';
-
-import Button from '../Button/Button';
 import { useSelector } from 'react-redux';
+import s from './AboutUs.module.scss';
+import Button from '../Button/Button';
 
 const AboutUs = () => {
   const state = useSelector(state => state.aboutUs);
-  // console.log(state);
   return (
     <div className={`block ${s.aboutUsBlock}`}>
       <div className={`container ${s.aboutUsContainer}`}>

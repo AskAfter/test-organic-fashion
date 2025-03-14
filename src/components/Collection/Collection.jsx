@@ -1,10 +1,9 @@
-import s from './Collection.module.scss';
-
 import { useSelector } from 'react-redux';
+
+import s from './Collection.module.scss';
 
 const Collection = () => {
   const state = useSelector(state => state.collection);
-  // console.log(state);
   return (
     <div className={`block ${s.collectionBlock}`}>
       <div className={s.rectangular}></div>
