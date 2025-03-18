@@ -21,3 +21,7 @@
     }
   }
 }
+
+@function darkenColor($color) {
+  @return darken($color, 10%);
+}
