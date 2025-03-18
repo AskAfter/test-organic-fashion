@@ -20,7 +20,7 @@ const AboutUs = () => {
             type="image/jpg"
           />
           <img
-            className={s.AboutUsImage}
+            className={s.outUsImage}
             src={state.images.desktop.jpg.x1}
             alt="horsetail"
             loading="lazy"
@@ -45,7 +45,7 @@ const AboutUs = () => {
               type="image/jpg"
             />
             <img
-              className={s.AboutUsMobileImage}
+              className={s.outUsMobileImage}
               src={state.images.mobile.jpg.x1}
               alt="horsetail"
               loading="lazy"

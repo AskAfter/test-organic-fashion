@@ -46,7 +46,7 @@
   }
 }
 
-.AboutUsImage {
+.outUsImage {
   @include respond(sm) {
     display: none;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-.AboutUsMobileImage {
+.outUsMobileImage {
   width: 198px;
   height: 250px;
   margin-bottom: 33px;
