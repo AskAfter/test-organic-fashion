@@ -7,7 +7,7 @@ const Collection = () => {
 
   return (
     <div className={`block ${s.collectionBlock}`}>
-      <div className={s.rectangular}></div>
+      <div className={s.collectionRectangular}></div>
       <div className={`container ${s.collectionContainer}`}>
         <h2 className={s.collectionHeader}>{state.title}</h2>
         <ul className={s.collectionList}>
@@ -42,7 +42,7 @@ const Collection = () => {
             </li>
           ))}
         </ul>
-        <p className={s.text}>{state.content}</p>
+        <p className={s.collectionText}>{state.content}</p>
       </div>
     </div>
   );

@@ -15,18 +15,18 @@ const Header = () => {
   return (
     <div className={`block ${s.headerBlock}`}>
       <div className={`container ${s.headerContainer}`}>
-        <nav className={s.nav}>
-          <a href="/" rel="no-referrer noopener" className={s.navName}>
+        <nav className={s.headerNav}>
+          <a href="/" rel="no-referrer noopener" className={s.headerNavName}>
             {state.title}
           </a>
           <button
             type="button"
-            className={s.navMobileMenu}
+            className={s.headerNavBtnMobileMenu}
             onClick={openModalHandler}
           >
             <BurgerIcon />
           </button>
-          <div className={s.navNavigation}>
+          <div className={s.headerNavNavigation}>
             <Navigation />
           </div>
         </nav>

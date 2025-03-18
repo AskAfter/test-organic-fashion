@@ -15,7 +15,7 @@ const Modal = () => {
     <div className={s.modalOverlay} onClick={closeModal}>
       <div className={s.modalContainer} onClick={e => e.stopPropagation()}>
         <Navigation modalClass="modalClass" closeModal={closeModalHandler} />
-        <button className={s.closeBtn} onClick={closeModal}>
+        <button className={s.modalCloseBtn} onClick={closeModal}>
           X
         </button>
       </div>

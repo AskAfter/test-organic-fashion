@@ -54,10 +54,11 @@ const AboutUs = () => {
           <p className={`${s.aboutUsText} ${s.aboutUsSecondText}`}>
             {state.contentSecondary}
           </p>
-          <Button label={state.buttonText} styleClass="secondary" />
+          <Button label={state.buttonText} styleClass="btnSecondary" />
         </div>
       </div>
     </div>
   );
 };
+
 export default AboutUs;

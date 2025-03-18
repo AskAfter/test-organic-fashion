@@ -8,7 +8,7 @@ const FollowUs = () => {
   const state = useSelector(state => state.followUs);
   return (
     <div className={`block ${s.followUsBlock}`}>
-      <div className={s.rectangular}></div>
+      <div className={s.followUsRectangular}></div>
       <div className={`container ${s.followUsContainer}`}>
         <div className={s.followUsContent}>
           <h2 className={s.followUsHeader} id="follow">

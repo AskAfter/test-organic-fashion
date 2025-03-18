@@ -35,7 +35,7 @@ const ShopByCategories = () => {
             </li>
           ))}
         </ul>
-        <div className={s.imageContainer}>
+        <div className={s.shopImageContainer}>
           <picture>
             <source
               srcSet={`${state.image.webp.x2} 2x, ${state.image.webp.x1} 1x`}

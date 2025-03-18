@@ -27,7 +27,7 @@
       padding-left: 204px;
     }
 
-    .navMobileMenu {
+    .headerNavBtnMobileMenu {
       position: absolute;
       top: 16px;
       right: 16px;
@@ -35,17 +35,17 @@
   }
 }
 
-.nav {
+.headerNav {
   display: flex;
 }
 
 @include respond(sm) {
-  .navNavigation {
+  .headerNavNavigation {
     display: none;
   }
 }
 
-.navName {
+.headerNavName {
   text-transform: uppercase;
 
   @include respond(md) {

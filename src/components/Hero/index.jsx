@@ -37,13 +37,13 @@ const Hero = () => {
             loading="lazy"
           />
         </picture>
-        <div className={s.contentWrap}>
+        <div className={s.heroContentWrap}>
           <h1 className={s.heroHeader} id={navItem.id}>
             {hero.title}
           </h1>
-          <div className={s.textWrap}>
-            <p className={s.text}>{hero.content}</p>
-            <Button label={hero.buttonText} styleClass="primaryHero" />
+          <div className={s.heroTextWrap}>
+            <p className={s.heroText}>{hero.content}</p>
+            <Button label={hero.buttonText} styleClass="btnPrimaryHero" />
           </div>
         </div>
       </div>

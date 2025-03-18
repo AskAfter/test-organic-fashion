@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
-.wrapper {
+
+.burgerIconWrapper {
   display: flex;
   padding: 8px 0;
   justify-content: space-between;
@@ -18,7 +19,7 @@
     background-color: darken($buttonBorder-color, 10%);
   }
 
-  .line {
+  .burgerIconWrapperLine {
     width: 41px;
     height: 5px;
     background-color: #d9d9d9;
@@ -26,7 +27,7 @@
 }
 
 @media (min-width: 992px) {
-  .wrapper {
+  .burgerIconWrapper {
     display: none;
   }
 }

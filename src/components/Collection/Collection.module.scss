@@ -7,7 +7,7 @@
   z-index: 0;
 }
 
-.rectangular {
+.collectionRectangular {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -182,7 +182,7 @@
   }
 }
 
-.text {
+.collectionText {
   font-size: $font-size-15;
   line-height: 19px;
   max-width: 298px;
