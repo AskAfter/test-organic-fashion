@@ -10,6 +10,7 @@ const FollowUs = () => {
     <div className={`block ${s.followUsBlock}`}>
       <div className={s.followUsRectangular}></div>
       <div className={`container ${s.followUsContainer}`}>
+        <div className={s.followUsRectangular}></div>
         <div className={s.followUsContent}>
           <h2 className={s.followUsHeader} id="follow">
             {state.title}
