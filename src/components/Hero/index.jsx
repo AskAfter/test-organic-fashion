@@ -6,6 +6,9 @@ import Button from '../Button';
 
 const Hero = () => {
   const hero = useSelector(state => state.hero);
+  const navState = useSelector(state => state.navigation.nav);
+  const navItem = navState.find(item => item.id === 'home');
+
   return (
     <div className={`block ${s.heroBlock}`}>
       <div className={`container ${s.heroContainer}`}>
@@ -35,7 +38,7 @@ const Hero = () => {
           />
         </picture>
         <div className={s.contentWrap}>
-          <h1 className={s.heroHeader} id="home">
+          <h1 className={s.heroHeader} id={navItem.id}>
             {hero.title}
           </h1>
           <div className={s.textWrap}>

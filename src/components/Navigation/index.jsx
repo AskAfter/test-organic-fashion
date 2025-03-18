@@ -8,35 +8,17 @@ const Navigation = ({ modalClass, closeModal }) => {
     <div>
       <nav className={s.nav}>
         <ul className={`${s[modalClass]} ${s.navList}`}>
-          <li className={s.navListItem}>
-            <a href="#home" className={s.navListItemLink} onClick={closeModal}>
-              {state.home}
-            </a>
-          </li>
-          <li className={s.navListItem}>
-            <a href="#about" className={s.navListItemLink} onClick={closeModal}>
-              {state.about}
-            </a>
-          </li>
-          <li className={s.navListItem}>
-            <a href="#shop" className={s.navListItemLink} onClick={closeModal}>
-              {state.shop}
-            </a>
-          </li>
-          <li className={s.navListItem}>
-            <a href="#" className={s.navListItemLink} onClick={closeModal}>
-              {state.blog}
-            </a>
-          </li>
-          <li className={s.navListItem}>
-            <a
-              href="#follow"
-              className={s.navListItemLink}
-              onClick={closeModal}
-            >
-              {state.contact}
-            </a>
-          </li>
+          {state.map(item => (
+            <li className={s.navListItem} key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={s.navListItemLink}
+                onClick={closeModal}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

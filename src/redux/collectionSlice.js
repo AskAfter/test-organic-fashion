@@ -34,26 +34,32 @@ const initialState = {
   title: 'New Collection',
   content:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  images: {
-    img1: {
+  images: [
+    {
+      id: 1,
+      alt: 'bush',
       webp: { x1: img1x1Webp, x2: img1x2Webp },
       png: { x1: img1x1Png, x2: img1x2Png },
       webp1920: { x1: img1x1Webpx1920, x2: img1x2Webpx1920 },
       png1920: { x1: img1x1Pngx1920, x2: img1x2Pngx1920 },
     },
-    img2: {
+    {
+      id: 2,
+      alt: 'flowerpot',
       webp: { x1: img2x1Webp, x2: img2x2Webp },
       png: { x1: img2x1Png, x2: img2x2Png },
       webp1920: { x1: img2x1Webpx1920, x2: img2x2Webpx1920 },
       png1920: { x1: img2x1Pngx1920, x2: img2x2Pngx1920 },
     },
-    img3: {
+    {
+      id: 3,
+      alt: 'leaf',
       webp: { x1: img3x1Webp, x2: img3x2Webp },
       png: { x1: img3x1Png, x2: img3x2Png },
       webp1920: { x1: img3x1Webpx1920, x2: img3x2Webpx1920 },
       png1920: { x1: img3x1Pngx1920, x2: img3x2Pngx1920 },
     },
-  },
+  ],
 };
 
 const collectionSlice = createSlice({

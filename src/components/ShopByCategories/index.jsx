@@ -4,100 +4,51 @@ import s from './ShopByCategories.module.scss';
 
 const ShopByCategories = () => {
   const state = useSelector(state => state.shop);
+  const navState = useSelector(state => state.navigation.nav);
+  const navItem = navState.find(item => item.id === 'shop');
+
   return (
     <div className={`block ${s.shopBlock}`}>
       <div className={`container ${s.shopContainer}`}>
-        <h2 className={s.shopHeader} id="shop">
+        <h2 className={s.shopHeader} id={navItem.id}>
           {state.title}
         </h2>
         <ul className={s.shopList}>
-          <li className={s.shopListItem}>
-            <picture>
-              <source
-                srcSet={`${state.images.img1.webp.x2} 2x, ${state.images.img1.webp.x1} 1x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${state.images.img1.jpg.x2} 2x, ${state.images.img1.jpg.x1} 1x`}
-                type="image/jpeg"
-              />
-              <img
-                className={s.shopImage}
-                src={state.images.img1.jpg.x1}
-                alt="bush"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-          <li className={s.shopListItem}>
-            <picture>
-              <source
-                srcSet={`${state.images.img2.webp.x2} 2x, ${state.images.img2.webp.x1} 1x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${state.images.img2.jpg.x2} 2x, ${state.images.img2.jpg.x1} 1x`}
-                type="image/jpeg"
-              />
-              <img
-                className={s.shopImage}
-                src={state.images.img2.jpg.x1}
-                alt="flowerpot"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-          <li className={s.shopListItem}>
-            <picture>
-              <source
-                srcSet={`${state.images.img3.webp.x2} 2x, ${state.images.img3.webp.x1} 1x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${state.images.img3.jpg.x2} 2x, ${state.images.img3.jpg.x1} 1x`}
-                type="image/jpeg"
-              />
-              <img
-                className={s.shopImage}
-                src={state.images.img3.jpg.x1}
-                alt="leaf"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-          <li className={s.shopListItem}>
-            <picture>
-              <source
-                srcSet={`${state.images.img4.webp.x2} 2x, ${state.images.img4.webp.x1} 1x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${state.images.img4.jpg.x2} 2x, ${state.images.img4.jpg.x1} 1x`}
-                type="image/jpeg"
-              />
-              <img
-                className={s.shopImage}
-                src={state.images.img4.jpg.x1}
-                alt="fern"
-                loading="lazy"
-              />
-            </picture>
-          </li>
+          {state.images.map(image => (
+            <li className={s.shopListItem} key={image.id}>
+              <picture>
+                <source
+                  srcSet={`${image.webp.x2} 2x, ${image.webp.x1} 1x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${image.jpg.x2} 2x, ${image.jpg.x1} 1x`}
+                  type="image/jpeg"
+                />
+                <img
+                  className={s.shopImage}
+                  src={image.jpg.x1}
+                  alt={image.alt}
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+          ))}
         </ul>
         <div className={s.imageContainer}>
           <picture>
             <source
-              srcSet={`${state.images.img5.webp.x2} 2x, ${state.images.img5.webp.x1} 1x`}
+              srcSet={`${state.image.webp.x2} 2x, ${state.image.webp.x1} 1x`}
               type="image/webp"
             />
             <source
-              srcSet={`${state.images.img5.jpg.x2} 2x, ${state.images.img5.jpg.x1} 1x`}
+              srcSet={`${state.image.jpg.x2} 2x, ${state.image.jpg.x1} 1x`}
               type="image/jpeg"
             />
             <img
               className={s.shopBottomImage}
-              src={state.images.img5.jpg.x1}
-              alt="horsetail"
+              src={state.image.jpg.x1}
+              alt={state.image.alt}
             />
           </picture>
         </div>

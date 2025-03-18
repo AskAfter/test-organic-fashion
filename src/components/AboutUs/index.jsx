@@ -4,6 +4,9 @@ import Button from '../Button';
 
 const AboutUs = () => {
   const state = useSelector(state => state.aboutUs);
+  const navState = useSelector(state => state.navigation.nav);
+  const navItem = navState.find(item => item.id === 'about');
+
   return (
     <div className={`block ${s.aboutUsBlock}`}>
       <div className={`container ${s.aboutUsContainer}`}>
@@ -24,7 +27,7 @@ const AboutUs = () => {
           />
         </picture>
         <div className={s.aboutUsContentWrap}>
-          <h2 className={s.aboutUsHeader} id="about">
+          <h2 className={s.aboutUsHeader} id={navItem.id}>
             {state.title}
           </h2>
           <p className={`${s.aboutUsText} ${s.aboutUsFirstText}`}>

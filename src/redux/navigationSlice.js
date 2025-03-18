@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  nav: {
-    home: 'Home',
-    about: 'About',
-    shop: 'Shop',
-    blog: 'Blog',
-    contact: 'Contact',
-  },
+  nav: [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'shop', label: 'Shop' },
+    { id: 'blog', label: 'Blog' },
+    { id: 'contact', label: 'Contact' },
+  ],
 };
 
 const navigationSlice = createSlice({
